@@ -15,7 +15,7 @@ img {
     scroll-snap-type: x mandatory;
 }
 
-.carrousel-ecran {
+.carrousel_ecran {
     flex: 100%;
     width: 100%;
     scroll-snap-align: start;
@@ -60,4 +60,8 @@ img {
     padding: 0;
     list-style: none;
     gap: 1rem;
+}
+
+.carrousel_ecran.actif {
+    background-color: #efefef;
 }
