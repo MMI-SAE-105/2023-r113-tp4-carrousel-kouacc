@@ -12,31 +12,31 @@
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
         <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
         <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-            <div id="ecran-1" class="carrousel_ecran" :class="{actif:hrefCourant==='#ecran-1'}">
+            <div id="ecran-1" class="carrousel_ecran" >
                 <figure>
                     <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
                     <figcaption>Écran 1</figcaption>
                 </figure>
             </div>
-            <div id="ecran-2" class="carrousel_ecran" :class="{actif:hrefCourant==='#ecran-2'}">
+            <div id="ecran-2" class="carrousel_ecran">
                 <figure>
                     <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
                     <figcaption>Écran 2</figcaption>
                 </figure>
             </div>
-            <div id="ecran-3" class="carrousel_ecran" :class="{actif:hrefCourant==='#ecran-3'}">
+            <div id="ecran-3" class="carrousel_ecran" >
                 <figure>
                     <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
                     <figcaption>Écran 3</figcaption>
                 </figure>
             </div>
-            <div id="ecran-4" class="carrousel_ecran" :class="{actif:hrefCourant==='#ecran-4'}">
+            <div id="ecran-4" class="carrousel_ecran" >
                 <figure>
                     <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
                     <figcaption>Écran 4</figcaption>
                 </figure>
             </div>
-            <div id="ecran-5" class="carrousel_ecran" :class="{actif:hrefCourant==='#ecran-5'}">
+            <div id="ecran-5" class="carrousel_ecran" >
                 <figure>
                     <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
                     <figcaption>Écran 5</figcaption>
@@ -44,11 +44,11 @@
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="caroussel_lien">Écran 1</a></li>
-            <li><a href="#ecran-2" class="caroussel_lien">Écran 2</a></li>
-            <li><a href="#ecran-3" class="caroussel_lien">Écran 3</a></li>
-            <li><a href="#ecran-4" class="caroussel_lien">Écran 4</a></li>
-            <li><a href="#ecran-5" class="caroussel_lien">Écran 5</a></li>
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">Écran 1</a></li>
+            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">Écran 2</a></li>
+            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Écran 3</a></li>
+            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Écran 4</a></li>
+            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Écran 5</a></li>
         </ul>
     </div>
 </body>

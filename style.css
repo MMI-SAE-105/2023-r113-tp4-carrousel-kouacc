@@ -44,6 +44,7 @@ img {
     display: grid;
     place-content: center;
     color: #fff;
+    cursor: pointer;
 }
 
 .carrousel_btn-avant {
@@ -63,21 +64,35 @@ img {
     gap: 1rem;
 }
 
-.carrousel_ecran.actif {
-    background-color: #ececec;
-}
-
 /* CSS de pure décoration, hors TP */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 a, figcaption {
     text-decoration: none;
-    color: black;
     font-family: Roboto Mono, monospace;
 }
 
+figcaption {
+    color: #2d334a;
+}
+
+.caroussel_lien {
+    background-color: #ececec;
+    color: #272343;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
 a:hover {
-    color:#969696;
+    background-color: #e1bf00;
     transition: .25s;
+}
+
+.caroussel_lien.actif {
+    background-color: #ffd803;
+}
+
+body {
+    background-color: #fffffe;
 }
