@@ -13,10 +13,11 @@ img {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    border-radius: 20px;
 }
 
 .carrousel_ecran {
-    flex: 100%;
+    flex: none;
     width: 100%;
     scroll-snap-align: start;
 }
@@ -63,5 +64,20 @@ img {
 }
 
 .carrousel_ecran.actif {
-    background-color: #efefef;
+    background-color: #ececec;
+}
+
+/* CSS de pure décoration, hors TP */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+a, figcaption {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto Mono, monospace;
+}
+
+a:hover {
+    color:#969696;
+    transition: .25s;
 }
