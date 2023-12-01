@@ -14,17 +14,22 @@ img {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     border-radius: 20px;
+    /* retire la scroll bar horizontal */
+    overflow: hidden;
 }
 
 .carrousel_ecran {
     flex: none;
     width: 100%;
     scroll-snap-align: start;
+    text-align: center;
 }
 
 .carrousel-ecran figure {
     margin: 0;
 }
+
+
 
 .carrousel {
     position: relative;
@@ -81,7 +86,9 @@ figcaption {
     background-color: #ececec;
     color: #272343;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    margin-top: 1rem;
 }
 
 a:hover {
@@ -94,5 +101,7 @@ a:hover {
 }
 
 body {
-    background-color: #fffffe;
+    background-color: #b5ddf3;
 }
+
+
